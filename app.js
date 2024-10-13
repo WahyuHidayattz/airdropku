@@ -61,12 +61,13 @@ setIcon(amount)
 function setIcon(amount){
     let iconGame = document.getElementById('icon-game')
     let level   = document.getElementById('level')
-    if(amount>=1000){
-        iconGame.src = "assets/images/level3.png"
-        level.textContent = "Level 3"
-    }
+    
     if(amount>=300){
         iconGame.src = "assets/images/level2.png"
         level.textContent = "Level 2"
+    }
+    if(amount>=1000){
+        iconGame.src = "assets/images/level3.png"
+        level.textContent = "Level 3"
     }
 }
